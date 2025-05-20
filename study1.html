@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <link rel="stylesheet" href="study1.css"/>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>HTML 실습 페이지</title>
+    </head>
+    <body>
+        <header>
+            <h1>HTML 실습 페이지</h1>
+            <nav>
+                <ul>
+                    <li><a href="#section1">섹션 1</a></li>
+                    <li><a href="#section2">섹션 2</a></li>
+                    <li><a href="#section3">섹션 3</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <section id="section1">
+                <h2>텍스트 스타일링</h2>
+                <p>이것은 <strong>강조된</strong> 텍스트입니다.</p>
+                <p>이것은 <em>이탤릭체</em> 텍스트입니다.</p>
+                <p>이것은 <mark>하이라이트된</mark> 텍스트입니다.</p>
+                <p>이것은 <small>작은</small> 텍스트입니다.</p>
+                <p>이것은 <del>삭제된</del> 텍스트입니다.</p>
+                <p>이것은 <ins>밑줄이 있는</ins> 텍스트입니다.</p>
+            </section>
+
+            <section id="section2">
+                <h2>리스트 예제</h2>
+                <h3>순서가 있는 리스트</h3>
+                <ol>
+                    <li>첫 번째 항목</li>
+                    <li>두 번째 항목</li>
+                    <li>세 번째 항목</li>
+                </ol>
+
+                <h3>순서가 없는 리스트</h3>
+                <ul>
+                    <li>항목 1</li>
+                    <li>항목 2</li>
+                    <li>항목 3</li>
+                </ul>
+
+                <h3>정의 리스트</h3>
+                <dl>
+                    <dt>HTML</dt>
+                    <dd>HyperText Markup Language</dd>
+                    <dt>CSS</dt>
+                    <dd>Cascading Style Sheets</dd>
+                </dl>
+            </section>
+
+            <section id="section3">
+                <h2>테이블 예제</h2>
+                <table border="1">
+                    <thead>
+                        <tr>
+                            <th>이름</th>
+                            <th>나이</th>
+                            <th>직업</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>홍길동</td>
+                            <td>25</td>
+                            <td>개발자</td>
+                        </tr>
+                        <tr>
+                            <td>김철수</td>
+                            <td>30</td>
+                            <td>디자이너</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+
+            <section id="section4">
+                <h2>폼 예제</h2>
+                <form action="#" method="post">
+                    <div>
+                        <label for="name">이름:</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div>
+                        <label for="email">이메일:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div>
+                        <label for="message">메시지:</label>
+                        <textarea id="message" name="message" rows="4" cols="50"></textarea>
+                    </div>
+                    <div>
+                        <label for="gender">성별:</label>
+                        <select id="gender" name="gender">
+                            <option value="male">남성</option>
+                            <option value="female">여성</option>
+                            <option value="other">기타</option>
+                        </select>
+                    </div>
+                    <div>
+                        <input type="submit" value="제출">
+                    </div>
+                </form>
+            </section>
+        </main>
+
+        <footer>
+            <p>&copy; 2025 HTML 실습 페이지. All rights reserved.</p>
+        </footer>
+    </body>
+</html>
