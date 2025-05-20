@@ -1,0 +1,133 @@
+.icon-wrap {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr); /* 한 줄에 5개씩 */
+  gap: 20px;                             /* 아이콘 사이 간격 */
+  width: 100%;                           /* 부모(페이지) 가로 길이만큼 */
+  box-sizing: border-box;
+}
+
+.icon-wrap img {
+  width: 100%;           /* 셀의 가로를 모두 채움 */
+  max-width: 80px;       /* 너무 커지지 않게 최대 크기 제한 (원하는 값으로 조절) */
+  aspect-ratio: 1/1;     /* 정사각형 비율 유지 (지원 브라우저에서) */
+  object-fit: contain;   /* 이미지 비율 유지하며 맞춤 */
+  display: block;
+  margin: 0 auto;
+}
+nav ul {
+  list-style: none;      /* 점 없애기 */
+  padding: 0;
+  margin: 0;
+  display: flex;         /* 가로 정렬 */
+  gap: 20px;
+  justify-content: center;
+}
+nav {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+nav ul li a {
+  text-decoration: none; /* 밑줄 제거 */
+  color: #333;
+  font-weight: bold;
+  padding: 8px 16px;
+}
+.notion-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  justify-content: center;
+}
+.notion-card {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  overflow: hidden;
+  width: 240px;
+  display: flex;
+  flex-direction: column;
+  transition: box-shadow 0.2s;
+}
+.notion-card:hover {
+  box-shadow: 0 4px 16px rgba(0,0,0,0.15);
+}
+.notion-thumb {
+  width: 100%;
+  height: 140px;
+  object-fit: cover;
+  background: #eee;
+}
+.notion-content {
+  padding: 16px;
+}
+.notion-content h3 {
+  margin: 0 0 8px 0;
+  font-size: 1.1em;
+}
+.notion-content p {
+  margin: 0;
+  color: #555;
+  font-size: 0.95em;
+}
+/* 아이콘 그리드 예시 */
+.icon-wrap {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 20px;
+  width: 100%;
+  box-sizing: border-box;
+}
+.icon-wrap img {
+  width: 100%;
+  max-width: 80px;
+  aspect-ratio: 1/1;
+  object-fit: contain;
+  display: block;
+  margin: 0 auto;
+}
+.profile-row {
+  display: flex;
+  align-items: right;      /* 세로 중앙 정렬 */
+  justify-content: space-between;               /* h1과 이미지 사이 간격 */
+  margin-bottom: 32px;
+  margin-right: 50px;      /* 아래 여백 */
+}
+
+.profile-img {
+  width: 200px;             /* 원하는 크기로 조절 */
+  height: 200px;
+  object-fit: cover;        /* 비율 유지하며 자르기 */
+  border-radius: 50%;       /* 원형으로 만들기 */
+  border: 3px solid #eee;   /* (선택) 테두리 */
+}
+.logo-img {
+  width: 80px;             /* 원하는 크기로 조절 */
+  height: 60px;
+  object-fit: cover;        /* 비율 유지하며 자르기 */
+}
+.logo-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 32px;
+  position: relative;
+}
+.bottom-row {
+  display: flex;
+  align-items: center;
+  margin-bottom: 32px;
+  justify-content: space-between;
+  position: relative;
+}
+.navicon-wrap {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  border-radius: 50%;
+}
+.navicon-wrap img {
+  width: 20px;
+  height: 20px;
+
+}
