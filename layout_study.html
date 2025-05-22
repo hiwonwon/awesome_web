@@ -3,22 +3,68 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Layout Study</title>
-    <link rel="stylesheet" href="study2.css">
+    <title>Imagination School</title>
+    <link rel="stylesheet" href="layout_study.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
-    <nav>
-        <ul>
-            <li><a href="#레이아웃"><i class="fas fa-th-large"></i><span>레이아웃</span></a></li>
-            <li><a href="#Flex"><i class="fas fa-boxes"></i><span>Flex</span></a></li>
-            <li><a href="#Grid"><i class="fas fa-th"></i><span>Grid</span></a></li>
-            <li><a href="#Position"><i class="fas fa-arrows-alt"></i><span>Position</span></a></li>
-            <li><a href="#Float"><i class="fas fa-float"></i><span>Float</span></a></li>
-        </ul>
+    <nav id="sidebar">
+        <div class="sidebar-top">
+            <img src="school_logo.png" alt="Imagination School Logo" class="school-logo">
+            <div class="school-name">
+                <span>Imagination</span><br>
+                <span>School</span>
+            </div>
+            <button id="toggle-btn" aria-label="사이드바 접기/펼치기">
+                <span id="arrow">&lt;</span>
+            </button>
+        </div>
+        <div class="sidebar-section">
+            <span class="section-title">Main</span>
+            <ul>
+                <li><a href="#"><i class="fas fa-home"></i><span>Main</span></a></li>
+                <li class="active"><a href="#"><i class="fas fa-chart-bar"></i><span>Administration</span></a></li>
+                <li><a href="#"><i class="fas fa-chart-pie"></i><span>Analytics/Reporting</span></a></li>
+                <li><a href="#"><i class="fas fa-book"></i><span>E-Journal</span></a></li>
+                <li><a href="#"><i class="fas fa-vial"></i><span>Testing</span></a></li>
+                <li><a href="#"><i class="fas fa-video"></i><span>Online meetings</span></a></li>
+                <li><a href="#"><i class="fas fa-chalkboard-teacher"></i><span>Teacher's office</span></a></li>
+            </ul>
+        </div>
+        <div class="sidebar-section">
+            <span class="section-title">Other</span>
+            <ul>
+                <li><a href="#"><i class="fas fa-globe"></i><span>Website Builder</span></a></li>
+                <li><a href="#"><i class="fas fa-comments"></i><span>Social</span></a></li>
+            </ul>
+        </div>
+        <div class="sidebar-bottom">
+            <a href="#"><i class="fas fa-cog"></i><span>Settings</span></a>
+        </div>
     </nav>
-    <main>
+    <main class="main-content">
         <!-- 메인 콘텐츠는 여기에 들어갑니다 -->
+         <!-- 검색 기능 -->
+          <div class="search-container">
+            <input type="search" placeholder="Ctrl f Scot">
+          </div>
+          <div class="greeting">
+            <h2>Hi kate,</h2>
+          </div>
+          <div class="greeting-text">
+            <p>You've 3 lessons today Mathmeetics and online catch up at 10:30 am</p>
+          </div>
+          <div class="grade_box">
+            <div class="grade_box_title">
+                <h2>Average pupils grades</h2>
+            </div>
+          </div>
+          <div class="grade_box1">
+            <div class="grade_box_title1">
+                <h2>Pupils absences</h2>
+            </div>
+          </div>
     </main>
+    <script src="layout_study.js"></script>
 </body>
-</html> 
+</html>
